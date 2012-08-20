@@ -1,0 +1,52 @@
+<html>
+<head>
+	<title>pSearch</title>
+	<meta http-equiv="content-type" content="text/html; charset=iso-8859-1">
+	<meta name="robots" content="index, nofollow">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<script type="text/javascript" src="js/jquery-1.7.2.min.js" ></script>
+	<script type="text/javascript" src="js/underscore-min.js" ></script>
+	<script type="text/javascript" src="js/backbone-min.js" ></script>
+	<script type="text/javascript" src="js/random.js"></script>
+	<script type="text/javascript" src="js/script.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/style.css"></head>
+<body>
+	<div id="wrapper">
+		<div id="header">
+			<div id="navi">
+				<ul id="menu">
+					<li class="title">pSearch</li>
+					<li>
+						<a href="#">Post Search</a>
+					</li>
+				</ul>
+
+			</div>
+			<div id="searchline">
+				<img style="float:left;" src="img/logo.png" height="100%">
+				<div id="searchform"> <b>"Facebook Post Search":</b>
+					<form name="form1" action="" method='get' onKeyup="$('.spinner').show();" autocomplete="off" onsubmit="return false;">
+						<input type="text" name="eingabe" onKeyup="start()" style="width:200px;height:50px;font-size: 20px;" class="span3" placeholder="Search">
+						<a class='btn btn-primary btnform'  onClick="start()">
+							<div class="text">Go</div>
+							<img class="spinner" src="img/spinner.gif" style="display:none;margin-top:15px;"></a>
+						<a class='btn btn-danger btnform' onClick="randomname()">Random or press "->"</a>
+
+					</from>
+
+				</div>
+
+			</div>
+
+		</div>
+		Try
+		<a onClick="example('youtube')">youtube</a>
+		,
+		<a onClick="example('funny')">funny</a>
+		,
+		<a onClick="example('picture')">picture</a>
+		, ...
+		<div id="content"></div>
+	</div>
+</body>
+</html>
